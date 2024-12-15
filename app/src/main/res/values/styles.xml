@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bold">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="reguler">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="light">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+</resources>

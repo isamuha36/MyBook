@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:context=".ui.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Gambar Profil atau Thumbnail -->
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_account_circle_24"
+            android:contentDescription="Item Image"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"/>
+
+        <!-- Konten Teks untuk Item -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Buku"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="ini adalala sinopsis dari buku qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklxcvbnmqwertyuiopasdfghjklxcvbnmdsfDFSD"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penulis : ini adalah nama penulis"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_light"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/ic_delete"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/delete"/>
+            <ImageButton
+                android:id="@+id/ic_bookmark"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/bookmark"
+                android:visibility="gone"/>
+            <ImageButton
+                android:id="@+id/ic_edit"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_gravity="bottom|center"/>
+</androidx.cardview.widget.CardView>
