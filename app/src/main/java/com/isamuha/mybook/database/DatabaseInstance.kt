@@ -7,11 +7,10 @@ import androidx.room.RoomDatabase
 import com.isamuha.mybook.model.Book
 import com.isamuha.mybook.model.User
 
-@Database(entities = [Book::class, User::class], version = 1, exportSchema = false)
+@Database(entities = [Book::class], version = 1, exportSchema = false)
 abstract class DatabaseInstance : RoomDatabase() {
 
     abstract fun bookmarkDao(): BookmarkDao
-    abstract fun userDao(): UserDao
 
     companion object {
         @Volatile
